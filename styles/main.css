@@ -1,0 +1,145 @@
+/* Header */
+.header {
+    height: 60px;
+    background-color: #3f51b5;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.header a {
+    margin: 0;
+    font-size: 24px;
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+}
+
+/* Main */
+.main {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.container-main {
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+}
+
+.title {
+    font-size: 26px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Todo List Form */
+.main-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Todo List Input */
+.main-form input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-bottom: 1px solid #ccc;
+}
+
+.main-form input:focus::placeholder {
+    color: #999;
+}
+
+.main-form input:focus {
+    outline: none;
+    border-bottom: 1px solid #999;
+}
+
+/* Todo List Add Button */
+.main-form button {
+    width: 100px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    background-color: #3f51b5;
+    color: #fff;
+    font-size: 16px;
+    border: 1px solid transparent;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.main-form button:hover {
+    background-color: #fff;
+    border: 1px solid #3f51b5;
+    color: #3f51b5;
+}
+
+/* Todo List Tasks */
+.main-tasks {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 5px;
+}
+
+.main-tasks li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.main-tasks li div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.main-tasks li div label {
+    cursor: pointer;
+}
+
+/* Todo List Task Delete Button */
+.main-tasks li button {
+    width: 100px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    background-color: #b53f3f;
+    color: #fff;
+    font-size: 16px;
+    border: 1px solid transparent;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.main-tasks li button:hover {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.26);
+}
+
+.main-tasks li button:active {
+    box-shadow: none;
+}
+
+/* Todo List Task Completed */
+
+.main-tasks .task-completed {
+    border-radius: 10px;
+    background-color: #fff;
+    border: none;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+}
